@@ -1,0 +1,102 @@
+* { /* initially removes margins and padding from everything on the webpage while also changing the font */ 
+    margin: 0px;
+    padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body { /* sets the background color of everything in the body section to black*/
+    background-color: black;
+}
+
+.headground { /* sets a padding in the headground class*/
+    padding: 2vw
+}
+
+.headertext { /* changes the color of the text in the header while also centering it and changing its font size*/
+    color:  rgb(255, 204, 0);
+    text-align: center;
+    font-size: 6vw;
+}
+
+.headersubtext { /* changes the coloro of the subtext in the header while also centering it and changing its font size*/
+    text-align: center;
+    color:  rgb(255, 204, 0);
+    font-size: 3vw;
+}
+
+.answercenter { /* this container for the final question will set itself to a flexbox and center its contents*/
+    display: flex;
+    justify-content: center;
+}
+
+.finjeop { /*turns the contents of the class into a flexbox, sets the direction to a column, adding a border and background color, setting its width to a portion of the page and adding a gap between its contents. */
+    display: flex;
+    flex-direction: column;
+    border: 8px solid rgb(68, 56, 8);
+    background-color: rgb(68, 56, 8);
+    width: 30%;
+    gap: .2vw;
+}
+
+li { /* everything with the tag loses its list style icon, while gaining a border and text shadow, having its text color changed, and its font size */
+    list-style-type: none;
+    border: 2px solid rgb(255, 204, 0);
+    color:  rgb(255, 204, 0);
+    font-size: 3vw;
+    text-shadow: .25vw .25vw black;
+}
+
+.category { /* turns the category class in a flexbox, centers the contents on both axis, sets its size to be scalable, and adds a background color*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.5%;
+    height: auto;
+    background-color: rgb(06, 12,233);
+}
+
+.question { /* turns the category class in a flexbox, centers the contents on both axis, sets its size to be scalable, and adds a background color*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.5%;
+    height: 20vw;
+    background-color: rgb(06, 12,233);
+}
+
+.answerfield { /* turns the contents of the answerfield class into a grid while adding padding to the top, a gap between the contents, center the contents on the page, making two columns on the grid of different sizes, letting the content make the rows, and setting the grid areas to be called on later*/
+    padding-top: 5vw;
+    display: grid;
+    gap: .5vw;
+    justify-content: center;
+    grid-template-columns: 14vw 8vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "amount bet"
+        "guess bet"
+}
+
+.amount { /*places the amount class in the grid area section defined in the answerfield class and changes the texts font size */
+    grid-area: amount;
+    font-size: 2vw;
+}
+
+.guess { /*places the amount class in the grid area section defined in the answerfield class and changes the texts font size */
+    grid-area: guess;
+    font-size: 2vw;
+}
+
+.bet { /*places the amount class in the grid area section defined in the answerfield class and changes the texts font size */
+    grid-area: bet;
+    font-size: 2vw;
+}
+
+button { /* everything with a button tag will have its background color changed, text color changed, font size changed, padding set, a border will be created with slightly rounded edges and the text will have a shadow*/
+    background-color: rgb(06, 12,233);
+    color: rgb(255, 204, 0);
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 2px solid rgb(255, 204, 0);
+    text-shadow: .25vw .25vw black;
+}

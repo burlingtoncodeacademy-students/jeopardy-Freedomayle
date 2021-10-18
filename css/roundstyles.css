@@ -1,0 +1,107 @@
+* { /* initially removes margins and padding from everything on the webpage while also changing the font */
+    margin: 0px;
+    padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body { /* sets the background color of everything in the body section to black*/
+    background-color: black;
+}
+
+.headground { /* sets a padding in the headground class*/
+    padding: 2vw
+}
+
+.headertext { /* changes the color of the text in the header while also centering it and changing its font size*/
+    color:  rgb(255, 204, 0);
+    text-align: center;
+    font-size: 6vw;
+}
+
+.headersubtext { /* changes the coloro of the subtext in the header while also centering it and changing its font size*/
+    text-align: center;
+    color:  rgb(255, 204, 0);
+    font-size: 3vw;
+}
+
+.board { /* takes the board class and creates a 6x6 grid out of its contents while adding a background color to the grid, centering all of the contents, adding a gap between them, adding margins to the left and right sides, and adding a border around the grid*/
+    display: grid;
+    background-color: rgb(68, 56, 8);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 6vw);
+    justify-items: center;
+    align-items: center;
+    gap: .5vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border: 8px solid rgb(68, 56, 8);
+
+}
+
+li { /* takes everything with the li tag and turns it into a flexbox, removes its list style icon, adds a border, allows its size to be scalable, centers the contents, changes the text color, sets its background color, changes its font size and adds a text shadow*/
+    display: flex;
+    list-style-type: none;
+    border: 2px solid rgb(255, 204, 0);
+    width: 14.4vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(255, 204, 0);
+    background-color: rgb(06, 12,233);
+    font-size: 3vw;
+    text-shadow: .25vw .25vw black;
+}
+
+.answerfield { /* centers the text in the answerfield class while adding a top margin and remaining scalable*/
+    text-align: center;
+    margin-top: 4vw;
+    max-width: 100%;
+    max-height: auto;
+}
+
+input { /* adds a margin and changes the font size to everything with the input tag*/
+    margin: .5vw;
+    font-size: 2vw;
+}
+
+.players { /* turns the players class into a flexbox while evenly spacing the contents across the page also changing the text color, adding padding to the top and changing the font size*/
+    display: flex;
+    color:rgb(255, 204, 0);
+    justify-content: space-evenly;
+    padding-top: 6vw;
+    font-size: 2vw;
+}
+
+footer { /* adds padding to the top, right, and bottom of the footer tag*/
+    padding-top: 10vw;
+    padding-right: 4vw;
+    padding-bottom: 6vw;
+}
+
+.nextpage { /* floats the contents of the nextpage class to the right of the page */
+    float: right;
+}
+
+.guess { /* adds padding, a margin on the right side, and scalabilty to its size*/
+    padding: .5vw;
+    margin-right: 2vw;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.pass { /* adds padding, a margin on the left side, and scalability to its size*/
+    padding: .5vw;
+    margin-left: 2vw;
+    max-width: 100%;
+    max-height: auto;
+}
+
+button { /* everything with a button tag will have its background color changed, text color changed, font size changed, padding set, a border will be created with slightly rounded edges and the text will have a shadow*/
+    background-color: rgb(06, 12,233);
+    color: rgb(255, 204, 0);
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 2px solid rgb(255, 204, 0);
+    text-shadow: .25vw .25vw black;
+}

@@ -1,0 +1,46 @@
+* { /* initially removes margins and padding from everything on the webpage while also changing the font */
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body { /*sets the background color to everything in the body section to black */
+    background-color: black;
+}
+
+.headground { /*sets padding to headground class */
+    padding: 2vw
+}
+
+.headertext { /* centers the text in the header and changes its color*/
+    text-align: center;
+    color: rgb(255, 204, 0);
+}
+
+.justpic { /* this container for the image will set itself to a flexbox and center its contents*/
+    display: flex;
+    justify-content: center;
+}
+
+.jeopic { /* sets a border around the image and sets its max width to the max while remaining scalable */
+    border: 2px solid rgb(255, 204, 0);
+    max-width: 100%;
+    max-height: auto;
+}
+
+footer { /* turns the footer section into a flexbox and center its contents while adding padding and a margin to its top*/
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    margin-top: 5vw;
+}
+
+button { /* a bunch of effects on the button including changing its background color its text color, size, and shadow also adding a border and slightly rounding the corners and padding*/
+    background-color: rgb(06, 12,233);
+    color: rgb(255, 204, 0);
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 2px solid rgb(255, 204, 0);
+    text-shadow: .25vw .25vw black;
+}
