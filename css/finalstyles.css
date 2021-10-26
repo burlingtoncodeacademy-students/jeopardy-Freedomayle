@@ -32,7 +32,7 @@ body { /* sets the background color of everything in the body section to black*/
 .finjeop { /*turns the contents of the class into a flexbox, sets the direction to a column, adding a border and background color, setting its width to a portion of the page and adding a gap between its contents. */
     display: flex;
     flex-direction: column;
-    border: 8px solid rgb(68, 56, 8);
+    border: .6vw solid rgb(68, 56, 8);
     background-color: rgb(68, 56, 8);
     width: 30%;
     gap: .2vw;
@@ -40,17 +40,15 @@ body { /* sets the background color of everything in the body section to black*/
 
 li { /* everything with the tag loses its list style icon, while gaining a border and text shadow, having its text color changed, and its font size */
     list-style-type: none;
-    border: 2px solid rgb(255, 204, 0);
+    border: .15vw solid rgb(255, 204, 0);
     color:  rgb(255, 204, 0);
     font-size: 3vw;
     text-shadow: .25vw .25vw black;
 }
 
 .category { /* turns the category class in a flexbox, centers the contents on both axis, sets its size to be scalable, and adds a background color*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 99.5%;
+    text-align: center;
+    width: 99%;
     height: auto;
     background-color: rgb(06, 12,233);
 }
@@ -59,7 +57,7 @@ li { /* everything with the tag loses its list style icon, while gaining a borde
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99.5%;
+    width: 99%;
     height: 20vw;
     background-color: rgb(06, 12,233);
 }
@@ -97,6 +95,6 @@ button { /* everything with a button tag will have its background color changed,
     font-size: 2vw;
     padding: 1vw;
     border-radius: 1vw;
-    border: 2px solid rgb(255, 204, 0);
+    border: .15vw solid rgb(255, 204, 0);
     text-shadow: .25vw .25vw black;
 }

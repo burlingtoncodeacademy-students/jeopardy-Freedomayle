@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeopardy: Round One</title> <!-- changes webpage tab text-->
-  <link rel="stylesheet" href="css/roundstyles.css"/> <!-- links to stylesheet in css folder for page layout and design-->
+  <link rel="stylesheet" href="css/roundstyles.css" />
+  <!-- links to stylesheet in css folder for page layout and design-->
 </head>
 
 <body>
@@ -14,57 +15,66 @@
     <h1 class="headertext">Jeopardy</h1> <!-- webpage title in the header section -->
     <h3 class="headersubtext">First Round</h3> <!-- webpage subtext-->
   </header>
-  <section class="board"> <!--sets the board this will be going into a grid-->
-    <li>Category</li>
-    <li>Category</li>
-    <li>Category</li>
-    <li>Category</li>
-    <li>Category</li>
-    <li>Category</li>
-    <li>$100</li>
-    <li>$100</li>
-    <li>$100</li>
-    <li>$100</li>
-    <li>$100</li>
-    <li>$100</li>
-    <li>$200</li>
-    <li>$200</li>
-    <li>$200</li>
-    <li>$200</li>
-    <li>$200</li>
-    <li>$200</li>
-    <li>$300</li>
-    <li>$300</li>
-    <li>$300</li>
-    <li>$300</li>
-    <li>$300</li>
-    <li>$300</li>
-    <li>$400</li>
-    <li>$400</li>
-    <li>$400</li>
-    <li>$400</li>
-    <li>$400</li>
-    <li>$400</li>
-    <li>$500</li>
-    <li>$500</li>
-    <li>$500</li>
-    <li>$500</li>
-    <li>$500</li>
-    <li>$500</li>
+  <div class=timerbox>
+    <div id="timer"></div>
+  </div>
+  <section id="board" class="board">
+    <!--sets the board this will be going into a grid-->
+    <li class="category">Category</li>
+    <li class="category">Category</li>
+    <li class="category">Category</li>
+    <li class="category">Category</li>
+    <li class="category">Category</li>
+    <li class="category">Category</li>
+    <li class="question" id="category-one-100">$100</li>
+    <li class="question" id="category-two-100">$100</li>
+    <li class="question" id="category-three-100">$100</li>
+    <li class="question" id="category-four-100">$100</li>
+    <li class="question" id="category-five-100">$100</li>
+    <li class="question" id="category-six-100">$100</li>
+    <li class="question" id="category-one-200">$200</li>
+    <li class="question" id="category-two-200">$200</li>
+    <li class="question" id="category-three-200">$200</li>
+    <li class="question" id="category-four-200">$200</li>
+    <li class="question" id="category-five-200">$200</li>
+    <li class="question" id="category-six-200">$200</li>
+    <li class="question" id="category-one-300">$300</li>
+    <li class="question" id="category-two-300">$300</li>
+    <li class="question" id="category-three-300">$300</li>
+    <li class="question" id="category-four-300">$300</li>
+    <li class="question" id="category-five-300">$300</li>
+    <li class="question" id="category-six-300">$300</li>
+    <li class="question" id="category-one-400">$400</li>
+    <li class="question" id="category-two-400">$400</li>
+    <li class="question" id="category-three-400">$400</li>
+    <li class="question" id="category-four-400">$400</li>
+    <li class="question" id="category-five-400">$400</li>
+    <li class="question" id="category-six-400">$400</li>
+    <li class="question" id="category-one-500">$500</li>
+    <li class="question" id="category-two-500">$500</li>
+    <li class="question" id="category-three-500">$500</li>
+    <li class="question" id="category-four-500">$500</li>
+    <li class="question" id="category-five-500">$500</li>
+    <li class="question" id="category-six-500">$500</li>
   </section>
-  <form class="answerfield"> <!-- creates a form that can take a text input and also has two buttons on if the player decides to take the question or pass it-->
+  <div id="question-timer"></div>
+  <form class="answerfield">
+    <!-- creates a form that can take a text input and also has two buttons on if the player decides to take the question or pass it-->
     <input type="text" placeholder="What is...?"><br>
-    <button class="guess">Guess</button>
-    <button class="pass">Pass</button>
+    <button id="guess" class="guess">Guess</button>
+    <button id="pass" class="pass">Pass</button>
   </form>
-  <section class="players"> <!--creates a player section to keep track of the players scores-->
+  <section class="players">
+    <!--creates a player section to keep track of the players scores-->
     <p>Player 1:</p>
     <p>Player 2:</p>
     <p>Player 3:</p>
   </section>
   <footer>
-    <a href="round-2.html"><button class="nextpage">Continue to Double Jeopardy</button></a> <!-- links to the next page in the game-->
+    <a href="round-2.html"><button class="nextpage">Continue to Double Jeopardy</button></a>
+    <!-- links to the next page in the game-->
   </footer>
+  <script src="scripts/round-1.js"></script>
 </body>
 
 </html>

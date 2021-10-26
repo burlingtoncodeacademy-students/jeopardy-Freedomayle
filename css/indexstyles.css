@@ -1,6 +1,6 @@
 * { /* initially removes margins and padding from everything on the webpage while also changing the font */
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body { /*sets the background color to everything in the body section to black */
 }
 
 .jeopic { /* sets a border around the image and sets its max width to the max while remaining scalable */
-    border: 2px solid rgb(255, 204, 0);
+    border: .15vw solid rgb(255, 204, 0);
     max-width: 100%;
     max-height: auto;
 }
@@ -41,6 +41,6 @@ button { /* a bunch of effects on the button including changing its background c
     font-size: 2vw;
     padding: 1vw;
     border-radius: 1vw;
-    border: 2px solid rgb(255, 204, 0);
+    border: .15vw solid rgb(255, 204, 0);
     text-shadow: .25vw .25vw black;
 }
