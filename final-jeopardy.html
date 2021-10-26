@@ -1,12 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- default initialization with !-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Jeopardy</title>
+  <title>Final Jeopardy</title> <!-- changes webpage tab text-->
+  <link rel="stylesheet" href="css/finalstyles.css"> <!-- links to stylesheet in css folder for page layout and design-->
 </head>
+
 <body>
-  <h1>Final Jeopardy</h1>
+  <header class="headground">
+    <h1 class="headertext">Jeopardy</h1> <!-- webpage title in the header section -->
+    <h3 class="headersubtext">Final Jeopardy</h3> <!-- webpage subtext-->
+  </header>
+  <section class="answercenter"> 
+    <section class="finjeop"> <!--sets the final question this will be going into a flexbox-->
+      <li class="category">Category</li>
+      <li class="question"> </li>
+    </section>
+  </section>
+  <form class="answerfield"> <!-- creates a form that can take a text input for the guess and another for the amount to bet and also has a button for when the player is ready to bet-->
+    <input class="amount" type="text" placeholder="Bet Amount..."><br>
+    <input class="guess" type="text" placeholder="What is...?">
+    <button class="bet">Bet!</button>
+  </form>
 </body>
+
 </html>

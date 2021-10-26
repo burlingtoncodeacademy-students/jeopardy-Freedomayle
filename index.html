@@ -1,12 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- basic layout initialized by use of !-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <title>Jeopardy</title> <!-- Sets tab name-->
+  <link rel="stylesheet" href="css/indexstyles.css"/> <!-- links to styles sheet in css folder-->
 </head>
-<body>
-  <h1>Welcome to Jeopardy!</h1>
+
+<body class=mouth>
+  <audio autoplay loop>
+    <source src="audio/Jeopardy-theme-song.mp3" type="audio/mpeg"> <!-- links jeopardy theme song audio from audio folder to webpage, plays automatically, and continously loops-->
+  </audio>
+  <header class="headground">
+    <h1 class="headertext">Welcome to JEOPARDY!</h1> <!-- Sets main title on webpage to "Welcome to JEOPARDY!"-->
+  </header>
+  <section class="justpic">
+    <img class="jeopic" alt="Jeopardy" src="https://ntvb.tmsimg.com/assets/p18664119_b_h8_ab.jpg?w=960&h=540"/> <!-- links Jeopardy image from another website to page-->
+  </section>
+  <footer>
+    <a href="round-1.html"><button id="start" class="gamestart">Begin JEOPARDY!</button></a> <!-- creates a button on the webpage that links to the next page when clicked-->
+  </footer>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

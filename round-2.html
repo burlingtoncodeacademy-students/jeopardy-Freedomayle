@@ -1,12 +1,71 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- default initialization with !-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <title>Jeopardy: Double Jeopardy</title> <!-- changes webpage tab text-->
+  <link rel="stylesheet" href="css/roundstyles.css" /> <!-- links to stylesheet in css folder for page layout and design-->
 </head>
+
 <body>
-  <h1>Double Jeopardy</h1>
+  <header class="headground">
+    <h1 class="headertext">Jeopardy</h1> <!-- webpage title in the header section -->
+    <h3 class="headersubtext">Double Jeopardy</h3> <!-- webpage subtext-->
+  </header>
+  <section class="board"> <!--sets the board this will be going into a grid-->
+    <li>Category</li>
+    <li>Category</li>
+    <li>Category</li>
+    <li>Category</li>
+    <li>Category</li>
+    <li>Category</li>
+    <li>$200</li>
+    <li>$200</li>
+    <li>$200</li>
+    <li>$200</li>
+    <li>$200</li>
+    <li>$200</li>
+    <li>$400</li>
+    <li>$400</li>
+    <li>$400</li>
+    <li>$400</li>
+    <li>$400</li>
+    <li>$400</li>
+    <li>$600</li>
+    <li>$600</li>
+    <li>$600</li>
+    <li>$600</li>
+    <li>$600</li>
+    <li>$600</li>
+    <li>$800</li>
+    <li>$800</li>
+    <li>$800</li>
+    <li>$800</li>
+    <li>$800</li>
+    <li>$800</li>
+    <li>$1000</li>
+    <li>$1000</li>
+    <li>$1000</li>
+    <li>$1000</li>
+    <li>$1000</li>
+    <li>$1000</li>
+  </section>
+  <form class="answerfield"> <!-- creates a form that can take a text input and also has two buttons on if the player decides to take the question or pass it-->
+    <input type="text" placeholder="What is...?"><br>
+    <button id="guess" class="guess">Guess</button>
+    <button id ="pass" class="pass">Pass</button>
+  </form>
+  <section class="players"> <!--creates a player section to keep track of the players scores-->
+    <p>Player 1:</p>
+    <p>Player 2:</p>
+    <p>Player 3:</p>
+  </section>
+  <footer>
+    <a href="final-jeopardy.html"><button class="nextpage">Continue to Final Jeopardy</button></a> <!-- links to the next page in the game-->
+  </footer>
+  <script src="scripts/round-2.js"></script>
 </body>
+
 </html>
